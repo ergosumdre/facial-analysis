@@ -1,3 +1,22 @@
+library(shiny)
+library(shinysense)
+library(tidyverse)
+library("Rvision")
+library("magick")
+library(shiny)
+library("devtools")
+library("ROpenCVLite")
+
+# installOpenCV()
+library("Rvision")
+library("magick")
+library("paws")
+# library("keras")
+
+
+### Must use these versions ###
+# conda_create("r-reticulate")
+# use_virtualenv("r-reticulate")
 # install_version("xtable", version = "1.8.4", repos = "http://cran.us.r-project.org", upgrade = "never")
 # install_version("R6", version = "2.5.0", repos = "http://cran.us.r-project.org", upgrade = "never")
 # install_version("rlang", version = "0.4.10", repos = "http://cran.us.r-project.org", upgrade = "never")
@@ -20,32 +39,11 @@
 # install_version("bslib", version = "0.2.4", repos = "http://cran.us.r-project.org", upgrade = "never")
 # install_version("r2d3", version = "0.2.3", repos = "http://cran.us.r-project.org", upgrade = "never")
 # install_version("jsonlite", version = "1.7.2", repos = "http://cran.us.r-project.org", upgrade = "never")
-#
+# installOpenCV(batch = T)
 # library(reticulate)
 
 
-
-library(shiny)
-library(shinysense)
-library(tidyverse)
-library("Rvision")
-library("magick")
-library(shiny)
-library("devtools")
-library("ROpenCVLite")
-#installOpenCV(batch = T)
-
-#installOpenCV()
-library("Rvision")
-library("magick")
-library("paws")
-#library("keras")
-
-#conda_create("r-reticulate")
-#use_virtualenv("r-reticulate")
-
 # instantiate the model
-#model <- application_resnet50(weights = 'imagenet')
 ui <- fluidPage(
     tags$head(includeHTML(("google-analytics.html"))),
     theme = shinythemes::shinytheme("flatly"),
